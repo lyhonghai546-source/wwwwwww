@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Báo tường 20/11 - 12A4</title>
+<trang chủ>
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(135deg,#ffdde1,#ee9ca7,#a1c4fd);
+    overflow-x:hidden;
+}
+
+/* Sticker bay */
+.sticker{
+    position:fixed;
+    font-size:25px;
+    animation: float 10s linear infinite;
+}
+@keyframes float{
+    0%{transform:translateY(100vh);}
+    100%{transform:translateY(-10vh);}
+}
+
+nav{
+    background: linear-gradient(to right,#ff758c,#ff7eb3);
+    padding:12px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    font-size:18px;
+}
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    width:1000px;
+    margin:20px auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    color:#ff4081;
+    text-shadow:0 0 15px pink;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+.gallery img:hover{
+    transform:scale(1.07) rotate(2deg);
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    margin-top:20px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sticker bay -->
+<div class="sticker" style="left:5%;">🌸</div>
+<div class="sticker" style="left:15%;animation-delay:2s;">💖</div>
+<div class="sticker" style="left:30%;animation-delay:4s;">⭐</div>
+<div class="sticker" style="left:60%;animation-delay:1s;">📚</div>
+<div class="sticker" style="left:80%;animation-delay:3s;">🍎</div>
+
+<nav>
+    <a href="">Trang chủ</a>
+    <a href="thuvien.html">Thư viện</a>
+    <a href="lienhe.html">Liên hệ</a>
+</nav>
+
+<div class="container">
+
+<h1>Tri Ân Người Lái Đò - 12A4</h1>
+
+<h2>Bài thơ tri ân</h2>
+<p style="font-style:italic;line-height:1.8;">
+Thầy cô như ánh nắng hồng <br>
+Soi đường dẫn lối ước mơ chúng em <br>
+Dù mai xa mái trường quen <br>
+Ơn thầy cô vẫn không quên suốt đời.
+</p>
+
+<h2>Hình ảnh kỷ niệm</h2>
+
+<div class="gallery">
+    <img src="anh1.jpg">
+    <img src="anh2.jpg">
+    <img src="anh3.jpg">
+    <img src="anh4.jpg">
+</div>
+
+<h2>Video kỷ niệm</h2>
+<video controls>
+    <source src="video1.mp4" type="video/mp4">
+</video>
+
+<footer>
+💐 Chúc mừng 20/11 -12A4💐
+</footer>
+
+</div>
+
+</body>
+</html>
